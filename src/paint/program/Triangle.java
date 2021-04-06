@@ -95,7 +95,6 @@ public class Triangle implements Shape{
     @Override
     public double area() { 
         double s = (a.distance(b)+b.distance(c) +c.distance(a))/2;
-        System.out.println("ASDA " + (a.distance(b)) + " "+ (b.distance(c)) + " " +(c.distance(a)));
         double area = Math.sqrt(s*(s-a.distance(b))*(s-b.distance(c))*(s-c.distance(a)));
         return area;    
         
