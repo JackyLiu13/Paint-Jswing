@@ -66,7 +66,7 @@ public class PaintProgram {
         System.out.println(pA);
         pA.rotate(-90);        
         System.out.println(pA);
-        //rotations are off likely due to math library
+        
         pA.rotate(66);
         System.out.println(pA);
         pA.rotate(-66);        
