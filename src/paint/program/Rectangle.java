@@ -43,17 +43,6 @@ public class Rectangle implements Shape {
         q = a.getA();
         w = a.getB();
         //Finds the opposite line that doesnt contain the first and second corner points and collects the end points of that line to be the other 2 corner points
-//        if (!((b.toString().contains(q.toString())) || (b.toString().contains(w.toString())))){
-//            e = b.getA();
-//            r = b.getB();
-//            
-//        }else if (!((c.toString().contains(q.toString())) || (c.toString().contains(w.toString())))){
-//            e = c.getA();
-//            r = c.getB();            
-//        }else if (!((d.toString().contains(q.toString())) || (d.toString().contains(w.toString())))){
-//            e = d.getA();
-//            r = d.getB();            
-//        }
         if (((b.getA().equals(q) == false && (b.getB().equals(q))) == false && ((b.getA().equals(w) == false && (b.getB().equals(w) == false))))){
             e = b.getA();
             r = b.getB();            
