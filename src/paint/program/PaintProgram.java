@@ -18,201 +18,201 @@ public class PaintProgram {
         // TODO code application logic here
        
         
-//        //Test Case Points~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//        System.out.println("~~~~~~~~~~~~~POINT~~~~~~~~~~~~~");
-//        Point pA = new Point();
-//        Point pB = new Point(2,2);
-//        Point pC = new Point(-2,-2);
-//        
-//        
-//        //est adding
-//        pA.add(pC); //test neg value
-//        System.out.println(pA);
-//        pA = new Point();
-//        pA.add(pB); //test post val
-//        System.out.println(pA);
-//        
-//        //test area should be 0
-//        System.out.println(pA.area());
-//        
-//        //test equals
-//        System.out.println(pA.equals(pB));
-//        System.out.println(pA.equals(pC));
-//                
-//        //test length + distance
-//        System.out.println(pA.length());
-//        System.out.println(pA.distance(pC));
-//        
-//        pA = new Point(); //test a point at origin
-//        pA.scale(-3.123123);
-//        System.out.println(pA);
-//        pA = pB;
-//        //scale
-//        pA.scale(-2); //test neg
-//        System.out.println(pA);
-//        pA.scale(-0.5);//test neg decimal to rescale back
-//        System.out.println(pA);
-//        
-//        //translate
-//        pA.translate(-2.5, -2.5);
-//        System.out.println(pA);        
-//        pA.translate(2.5, 2.5);
-//        System.out.println(pA);
-//        pA = new Point(-4,4);
-//        
-//        //rotations
-//        pA.rotate(90);
-//        System.out.println(pA);
-//        pA.rotate(-90);        
-//        System.out.println(pA);
-//        //rotations are off likely due to math library
-//        pA.rotate(66);
-//        System.out.println(pA);
-//        pA.rotate(-66);        
-//        System.out.println(pA);      
-//        
-//        
-//        //Line~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//        System.out.println("~~~~~~~~~~~~~LINE~~~~~~~~~~~~~");
-//        Point lPA = new Point(-2,-2);
-//        Point lPB = new Point(-2,2);
-//        Point lPC = new Point (2,2);
-//        Point lPD = new Point (2,-2);
-//        
-//        Line lA = new Line();
-//        Line lB = new Line(lPA,lPC);//diangle
-//        Line lC = new Line(lPA,lPB);//horizontal
-//        Line lD = new Line(lPA,lPD);//vertical
-//        Line lE = new Line(lPA);
-//        
-//        lA.scale(231231.412); //scales nothing
-//        System.out.println(lA.toString()); 
-//        lB.scale(-2);     
-//        System.out.println(lB.toString());
-//        lC.scale(0.5);
-//        System.out.println(lC.toString());
-//        lD.scale(2.5);
-//        System.out.println(lD.toString());
-//                
-//        lB.translate(0, 0);
-//        System.out.println(lB.toString());
-//        lB.translate(2, 2);        
-//        System.out.println(lB.toString());
-//        lB.translate(-2,-2);
-//        System.out.println(lB.toString());
-//        
-//        lB.rotate(90);        
-//        System.out.println(lB.toString());
-//        lB.rotate(-90);
-//        System.out.println(lB.toString());
-//                
-//        System.out.println(lE.area());
-//        System.out.println(lE.equals(lA));
-//        lB = new Line(lPA,lPC);
-//        lA = new Line(lPA,lPC);
-//        System.out.println(lB.equals(lA));
-//        
-//        //Rectangle~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//        System.out.println("~~~~~~~~~~~~~RECTANGLE~~~~~~~~~~~~~");
-//        Point rPA = new Point(-2,-3);
-//        Point rPB = new Point(-2,3);
-//        Point rPC = new Point (2,3);
-//        Point rPD = new Point (2,-3);
-//        
-//        Line rLA = new Line(rPA,rPB);
-//        Line rLB = new Line(rPB,rPC);
-//        Line rLC = new Line(rPC,rPD);
-//        Line rLD = new Line(rPD,rPA);
-//        
-//        Rectangle rPABCD = new Rectangle (rPA,rPB,rPC,rPD);        
-//        Rectangle rLABCD = new Rectangle (rLA,rLB,rLC,rLD);
-//        
-//        System.out.println(rPABCD.equals(rLABCD));
-//        System.out.println(rLABCD.toString());
-//        rPABCD.scale(4);
-//        System.out.println(rPABCD.toString());
-//        
-//        rPABCD.translate(4,4);
-//        System.out.println(rPABCD.toString());
-//        rPABCD.translate(-4,-4);
-//        System.out.println(rPABCD.toString());
-//        
-//        
-//        rPABCD.rotate(90);
-//        System.out.println(rPABCD.toString());
-//        rPABCD.rotate(-90);
-//        System.out.println(rPABCD.toString());
-//        
-//        System.out.println(rPABCD.area());
-//        
-//        //Square~~~~~~~~~~~~~~~~~~~~~~~
-//        System.out.println("~~~~~~~~~~~~~SQUARE~~~~~~~~~~~~~");
-//        Point sPA = new Point(-3,-3);
-//        Point sPB = new Point(-3,3);
-//        Point sPC = new Point (3,3);
-//        Point sPD = new Point (3,-3);
-//        
-//        Line sLA = new Line(sPA,sPB);
-//        Line sLB = new Line(sPB,sPC);
-//        Line sLC = new Line(sPC,sPD);
-//        Line sLD = new Line(sPD,sPA);
-//        
-//        Rectangle sPABCD = new Rectangle (sPA,sPB,sPC,sPD);        
-//        Rectangle sLABCD = new Rectangle (sLA,sLB,sLC,sLD);
-//       
-//        System.out.println(sPABCD.equals(sLABCD));
-//        
-//        System.out.println(sLABCD.toString());
-//        sPABCD.scale(4);
-//        System.out.println(sPABCD.toString());
-//        
-//        sPABCD.translate(4,4);
-//        System.out.println(sPABCD.toString());
-//        sPABCD.translate(-4,-4);
-//        System.out.println(sPABCD.toString());
-//        
-//        sPABCD.rotate(90);
-//        System.out.println(sPABCD.toString());
-//        sPABCD.rotate(-90);
-//        System.out.println(sPABCD.toString());
-//        
-//        System.out.println(sPABCD.area());
-//        
-//        //triangle
-//        System.out.println("~~~~~~~~~~~~~TRIANGLE~~~~~~~~~~~~~");
-//        Point tPA = new Point(-4,-4);
-//        Point tPB = new Point(-4,4);
-//        Point tPC = new Point (4,4);
-//        
-//        Line tLA = new Line(tPA,tPB);
-//        Line tLB = new Line(tPB,tPC);
-//        Line tLC = new Line(tPC,tPA);
-//        
-//        Triangle tPABC = new Triangle (tPA,tPB,tPC);        
-//        Triangle tLABC = new Triangle (tLA,tLB,tLC);
-//       
-//        System.out.println(tPABC.area());
-//        
-//        
-//        System.out.println(tLABC.equals(tPABC));
-//        
-//        System.out.println(tLABC.toString());
-//        tPABC.scale(4);
-//        System.out.println(tPABC.toString());
-//        
-//        tPABC.translate(4,4);
-//        System.out.println(tPABC.toString());
-//        tPABC.translate(-4,-4);
-//        System.out.println(tPABC.toString());
-//        
-//        System.out.println(tPABC.area());        
-//        tPABC.rotate(90);        
-//        System.out.println(tPABC.area());
-//        System.out.println(tPABC.toString());
-//        tPABC.rotate(-90);
-//        System.out.println(tPABC.toString());
-//        System.out.println(tPABC.area());
-//        System.out.println(tLABC.area());
+        //Test Case Points~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        System.out.println("~~~~~~~~~~~~~POINT~~~~~~~~~~~~~");
+        Point pA = new Point();
+        Point pB = new Point(2,2);
+        Point pC = new Point(-2,-2);
+        
+        
+        //est adding
+        pA.add(pC); //test neg value
+        System.out.println(pA);
+        pA = new Point();
+        pA.add(pB); //test post val
+        System.out.println(pA);
+        
+        //test area should be 0
+        System.out.println(pA.area());
+        
+        //test equals
+        System.out.println(pA.equals(pB));
+        System.out.println(pA.equals(pC));
+                
+        //test length + distance
+        System.out.println(pA.length());
+        System.out.println(pA.distance(pC));
+        
+        pA = new Point(); //test a point at origin
+        pA.scale(-3.123123);
+        System.out.println(pA);
+        pA = pB;
+        //scale
+        pA.scale(-2); //test neg
+        System.out.println(pA);
+        pA.scale(-0.5);//test neg decimal to rescale back
+        System.out.println(pA);
+        
+        //translate
+        pA.translate(-2.5, -2.5);
+        System.out.println(pA);        
+        pA.translate(2.5, 2.5);
+        System.out.println(pA);
+        pA = new Point(-4,4);
+        
+        //rotations
+        pA.rotate(90);
+        System.out.println(pA);
+        pA.rotate(-90);        
+        System.out.println(pA);
+        //rotations are off likely due to math library
+        pA.rotate(66);
+        System.out.println(pA);
+        pA.rotate(-66);        
+        System.out.println(pA);      
+        
+        
+        //Line~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        System.out.println("~~~~~~~~~~~~~LINE~~~~~~~~~~~~~");
+        Point lPA = new Point(-2,-2);
+        Point lPB = new Point(-2,2);
+        Point lPC = new Point (2,2);
+        Point lPD = new Point (2,-2);
+        
+        Line lA = new Line();
+        Line lB = new Line(lPA,lPC);//diangle
+        Line lC = new Line(lPA,lPB);//horizontal
+        Line lD = new Line(lPA,lPD);//vertical
+        Line lE = new Line(lPA);
+        
+        lA.scale(231231.412); //scales nothing
+        System.out.println(lA.toString()); 
+        lB.scale(-2);     
+        System.out.println(lB.toString());
+        lC.scale(0.5);
+        System.out.println(lC.toString());
+        lD.scale(2.5);
+        System.out.println(lD.toString());
+                
+        lB.translate(0, 0);
+        System.out.println(lB.toString());
+        lB.translate(2, 2);        
+        System.out.println(lB.toString());
+        lB.translate(-2,-2);
+        System.out.println(lB.toString());
+        
+        lB.rotate(90);        
+        System.out.println(lB.toString());
+        lB.rotate(-90);
+        System.out.println(lB.toString());
+                
+        System.out.println(lE.area());
+        System.out.println(lE.equals(lA));
+        lB = new Line(lPA,lPC);
+        lA = new Line(lPA,lPC);
+        System.out.println(lB.equals(lA));
+        
+        //Rectangle~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        System.out.println("~~~~~~~~~~~~~RECTANGLE~~~~~~~~~~~~~");
+        Point rPA = new Point(-2,-3);
+        Point rPB = new Point(-2,3);
+        Point rPC = new Point (2,3);
+        Point rPD = new Point (2,-3);
+        
+        Line rLA = new Line(rPA,rPB);
+        Line rLB = new Line(rPB,rPC);
+        Line rLC = new Line(rPC,rPD);
+        Line rLD = new Line(rPD,rPA);
+        
+        Rectangle rPABCD = new Rectangle (rPA,rPB,rPC,rPD);        
+        Rectangle rLABCD = new Rectangle (rLA,rLB,rLC,rLD);
+        
+        System.out.println(rPABCD.equals(rLABCD));
+        System.out.println(rLABCD.toString());
+        rPABCD.scale(4);
+        System.out.println(rPABCD.toString());
+        
+        rPABCD.translate(4,4);
+        System.out.println(rPABCD.toString());
+        rPABCD.translate(-4,-4);
+        System.out.println(rPABCD.toString());
+        
+        
+        rPABCD.rotate(90);
+        System.out.println(rPABCD.toString());
+        rPABCD.rotate(-90);
+        System.out.println(rPABCD.toString());
+        
+        System.out.println(rPABCD.area());
+        
+        //Square~~~~~~~~~~~~~~~~~~~~~~~
+        System.out.println("~~~~~~~~~~~~~SQUARE~~~~~~~~~~~~~");
+        Point sPA = new Point(-3,-3);
+        Point sPB = new Point(-3,3);
+        Point sPC = new Point (3,3);
+        Point sPD = new Point (3,-3);
+        
+        Line sLA = new Line(sPA,sPB);
+        Line sLB = new Line(sPB,sPC);
+        Line sLC = new Line(sPC,sPD);
+        Line sLD = new Line(sPD,sPA);
+        
+        Rectangle sPABCD = new Rectangle (sPA,sPB,sPC,sPD);        
+        Rectangle sLABCD = new Rectangle (sLA,sLB,sLC,sLD);
+       
+        System.out.println(sPABCD.equals(sLABCD));
+        
+        System.out.println(sLABCD.toString());
+        sPABCD.scale(4);
+        System.out.println(sPABCD.toString());
+        
+        sPABCD.translate(4,4);
+        System.out.println(sPABCD.toString());
+        sPABCD.translate(-4,-4);
+        System.out.println(sPABCD.toString());
+        
+        sPABCD.rotate(90);
+        System.out.println(sPABCD.toString());
+        sPABCD.rotate(-90);
+        System.out.println(sPABCD.toString());
+        
+        System.out.println(sPABCD.area());
+        
+        //triangle
+        System.out.println("~~~~~~~~~~~~~TRIANGLE~~~~~~~~~~~~~");
+        Point tPA = new Point(-4,-4);
+        Point tPB = new Point(-4,4);
+        Point tPC = new Point (4,4);
+        
+        Line tLA = new Line(tPA,tPB);
+        Line tLB = new Line(tPB,tPC);
+        Line tLC = new Line(tPC,tPA);
+        
+        Triangle tPABC = new Triangle (tPA,tPB,tPC);        
+        Triangle tLABC = new Triangle (tLA,tLB,tLC);
+       
+        System.out.println(tPABC.area());
+        
+        
+        System.out.println(tLABC.equals(tPABC));
+        
+        System.out.println(tLABC.toString());
+        tPABC.scale(4);
+        System.out.println(tPABC.toString());
+        
+        tPABC.translate(4,4);
+        System.out.println(tPABC.toString());
+        tPABC.translate(-4,-4);
+        System.out.println(tPABC.toString());
+        
+        System.out.println(tPABC.area());        
+        tPABC.rotate(90);        
+        System.out.println(tPABC.area());
+        System.out.println(tPABC.toString());
+        tPABC.rotate(-90);
+        System.out.println(tPABC.toString());
+        System.out.println(tPABC.area());
+        System.out.println(tLABC.area());
         
         
         
