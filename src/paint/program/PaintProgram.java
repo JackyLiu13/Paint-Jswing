@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Jacky Liu
+ * ICS4U Period 1
+ * Mr. Roy-Diclemente
+ * April 6 2021
+ * Object Orientated Programming challenges with Shapes "using" paint program
  */
 package paint.program;
 
