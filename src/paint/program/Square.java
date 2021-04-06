@@ -11,12 +11,24 @@ public class Square extends Rectangle{
     {
         super();
     }
-    /** point constructor, inherits from rectangle*/
+    /**Point Constructor 
+     * Takes in a point which will the be the corner points of each square
+     * @param a the first corner point
+     * @param b the second corner point
+     * @param c the third corner point
+     * @param d the fourth corner point
+     */
     public Square(Point a, Point b, Point c, Point d)
     {
         super(a,b,c,d);
     }
-    /** point  constructor, inherits from rectangle*/
+    /** Line constructor
+     * Takes in lines and finds the corner points of the lines to form square
+     * @param a first line (width/length)
+     * @param b second line (width/length)
+     * @param c third line (width/length)
+     * @param d fourth line (width/length)
+     */
     public Square(Line a, Line b, Line c, Line d) {
         super(a,b,c,d);
     }
@@ -42,8 +54,9 @@ public class Square extends Rectangle{
     }
     /**
      * Calculates the area of a square by squaring one side length
-     * @return squared side length of q to w
+     * @return squared sidelength of q to w
      */
+    @Override
     public double area()
     {        
         return Math.pow(q.distance(w),2);

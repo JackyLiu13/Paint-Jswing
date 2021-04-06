@@ -13,11 +13,10 @@ package paint.program;
  */
 public class PaintProgram {
 
-    /**
+    /** Main where the code runs
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
        
         
         //Test Case Points~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -8,7 +8,7 @@ package paint.program;
 public interface Shape {
     /**Scale method
      * Will make any shape decompress or stretch, can also reflect
-     * @param multiplier the value that will decompress (0<multiplier<1) or stretch (multiplier >1) or reflect (-)
+     * @param multiplier the value that will decompress (when multiplier is decimal) or stretch (multiplier greater than 1) or reflect (-)
      */
     public void scale(double multiplier);
     /**
