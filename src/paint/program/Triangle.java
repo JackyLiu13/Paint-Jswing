@@ -26,9 +26,9 @@ public class Triangle implements Shape{
     public Triangle(Point a, Point b, Point c)
     {
         //sets the instance points so the corners from the line
-        this.a = a;
-        this.b = b;
-        this.c= c;
+        this.a = new Point(a);
+        this.b = new Point(b);
+        this.c= new Point(c);
     }
     /**
      * constructor taking in 3 lines and takes the corner points of the 3 lines

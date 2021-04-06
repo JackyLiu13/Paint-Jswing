@@ -3,7 +3,7 @@
  * ICS4U Period 1
  * Mr. Roy-Diclemente
  * April 6 2021
- * Object Orientated Programming challenges with Shapes "using" paint program
+ * Object Orientated Programming challenges with Shapes 
  */
 package paint.program;
 
@@ -18,7 +18,6 @@ public class PaintProgram {
      */
     public static void main(String[] args) {
        
-        
         //Test Case Points~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         System.out.println("~~~~~~~~~~~~~POINT~~~~~~~~~~~~~");
         Point pA = new Point();
@@ -215,6 +214,36 @@ public class PaintProgram {
         System.out.println(tPABC.area());
         System.out.println(tLABC.area());
         
+        
+        
+        //Comparing other shapes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        System.out.println("~~~~~~~~~~~~~Other Shapes~~~~~~~~~~~~~");
+        System.out.println(rLABCD.equals(tLABC)); //rect and tri
+        System.out.println(rLABCD.equals(lE)); //rect and line
+        System.out.println(rLABCD.equals("string :)")); //rect and string
+        System.out.println(rLABCD.equals(sLABCD)); //rect and square
+        System.out.println(rLABCD.equals(tPC)); //rect and point
+        System.out.println(lE.equals(pA)); //line and point
+        tPC.scale(0.5);
+        System.out.println(tPC.equals(lPC)); //point and point
+        
+        Point p1 = new Point(2,2);
+        Point p2 = new Point(2,-2);
+        Point p3 = new Point(-2,-2);
+        Point p4 = new Point(-2,2);
+        
+        Rectangle r1 = new Rectangle(p1,p2,p3,p4);
+        Square s1 = new Square(p1,p2,p3,p4);
+        Triangle t1 = new Triangle(p1,p2,p3);
+        Line l1 = new Line(p1,p2);
+        System.out.println(r1.equals(s1)); //a square is a rect
+        System.out.println(s1.equals(r1));//but a rect is not a square
+        System.out.println(s1.equals(t1));
+        System.out.println(r1.equals(t1));
+        System.out.println(t1.equals(l1));
+        System.out.println(s1.equals(l1));
+        System.out.println(r1.equals(l1));
+
         
         
         
