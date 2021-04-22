@@ -133,4 +133,18 @@ public class Triangle implements Shape{
         return (a.toString() + b.toString() + c.toString());
     }
     
+    //Encapsulate the points
+    public Point getA()
+    {
+        return a;
+    }
+     public Point getB()
+    {
+        return b;
+    }
+      public Point getC()
+    {
+        return c;
+    }
+    
 }

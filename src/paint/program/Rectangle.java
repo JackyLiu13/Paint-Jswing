@@ -149,5 +149,28 @@ public class Rectangle implements Shape {
         
         return (q.toString() + w.toString() + e.toString() + r.toString() );
     }
-
+    
+    public int height(){
+        return (int)q.distance(w);
+    }
+    public int width(){
+        return (int)e.distance(w);
+    }
+    //Encapsulate the points
+    public Point getQ()
+    {
+        return q;
+    }
+     public Point getW()
+    {
+        return w;
+    }
+      public Point getE()
+    {
+        return e;
+    }
+      public Point getR()
+    {
+        return r;
+    }
 }
