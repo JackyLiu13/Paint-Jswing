@@ -150,12 +150,10 @@ public class Rectangle implements Shape {
         return (q.toString() + w.toString() + e.toString() + r.toString() );
     }
     
-    public int height(){
-        return (int)q.distance(w);
-    }
-    public int width(){
-        return (int)e.distance(w);
-    }
+    
+    
+    
+    //NEW EDIT FOR PAINT GUI
     //Encapsulate the points
     public Point getQ()
     {

@@ -133,6 +133,8 @@ public class Triangle implements Shape{
         return (a.toString() + b.toString() + c.toString());
     }
     
+    
+    //NEW EDIT FOR PAINT GUI
     //Encapsulate the points
     public Point getA()
     {
