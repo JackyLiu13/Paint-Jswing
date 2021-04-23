@@ -5,6 +5,8 @@
  * April 22 2021
  * Object Orientated Programming challenges with Shapes 
  * Now with GUI and line rectangle triangle drawing options :O
+ * Change log:
+ *  Within Rectangle and Triangle I encapsulated the points
  */
 package painting;
 
