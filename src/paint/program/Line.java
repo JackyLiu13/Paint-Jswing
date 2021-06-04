@@ -1,5 +1,5 @@
 package paint.program;
-
+//
 /**
  * Line class holds all the properties that is required for a Line
  *
