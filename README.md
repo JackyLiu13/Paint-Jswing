@@ -1,2 +1,2 @@
 # Paint-Jswing
-ICS4U OPP Project
+ICS4U OOP Project
